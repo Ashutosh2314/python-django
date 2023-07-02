@@ -1,0 +1,10 @@
+*.pyc
+static/*
+media/*
+settings_local.py
+!.gitkeep
+src/
+build/
+tmp/
+sqlite_database
+.coverage

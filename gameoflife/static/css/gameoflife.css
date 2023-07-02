@@ -1,0 +1,140 @@
+
+
+/* Colors and Fonts 
+--------------------------------------------------------*/
+
+h1, h2, h3, h4, .replace, header, footer, .sans { font-family: Arial,Liberation Sans,DejaVu Sans,sans-serif; }
+
+h1 { line-height: 36px; font-size: 28px; font-weight: bold; margin-bottom: 5px; }
+h2 { line-height: 28px; font-size: 22px; font-weight: bold; margin-bottom: 2px; }
+h3 { line-height: 20px; font-size: 18px; font-weight: bold; margin-bottom: 2px; }
+h4 { line-height: 17px; font-size: 14px; font-weight: bold; margin-bottom: 2px; }
+p, article { margin-bottom: 10px; }
+
+body { font-family: Arial,Liberation Sans,DejaVu Sans,sans-serif; }
+
+#primary_container {}
+
+a:link, a:visited {}
+a:hover, a:active {}
+
+/* Lists
+--------------------------------------------------------*/
+ul {
+  list-style-type: square;
+  list-style-image: url('/static/image/bullet.png');
+  padding: 0px 0px 0px 18px;
+}
+ol { padding-left: 25px; }
+
+
+/* Main Element Layout 
+--------------------------------------------------------*/
+
+div.mainWrapper {margin: 0 auto; z-index: 1; overflow: hidden; position: relative;}
+
+#header, #footer {}
+
+/* Box Sizing
+--------------------------------------------------------*/
+
+div, span, article { box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+
+/* Header Layout
+--------------------------------------------------------*/
+#header h1 a:link, #header h1 a:hover, #header h1 a:visited, #header h1 a:active { text-decoration: none; }
+
+/* Form Elements
+--------------------------------------------------------*/
+
+input[type='text'], input[type='password'], select, textarea, input[type='file'], .chzn-container{
+  background: #fafafa;
+  border: solid 1px #bbbbbb;
+  border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+input[type='text'], input[type='password'], select, textarea, input[type='file'] {
+  box-shadow: inset 0px 4px 4px #e4e4e4;
+  padding: 6px 5px 4px 5px;
+}
+
+button {
+  min-width: 100px;
+  color: white;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 5px;
+  padding: 8px 10px 6px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: solid 1px #333;
+  text-shadow: #333 0px 1px 0px;
+}
+
+button.red {
+    background-color: #FE2115;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.01, #ce1100), color-stop(1.00, #FE2115));
+    background-image: -moz-linear-gradient(center bottom, #ce1100 1%, #FE2115 100%);
+}
+
+button.orange {
+    background-color: #FF7C00;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.01, #FF9D40), color-stop(1.00, #FF7C00));
+    background-image: -moz-linear-gradient(center bottom, #FF9D40 1%, #FF7C00 100%);
+}
+
+button.yellow {
+    background-color: #FFD300;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.01, #BFA730), color-stop(1.00, #FFD300));
+    background-image: -moz-linear-gradient(center bottom, #BFA730 1%, #FFD300 100%);
+}
+
+button.blue {
+    background-color: #4867D6;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.01, #6E84D6), color-stop(1.00, #4867D6));
+    background-image: -moz-linear-gradient(center bottom, #6E84D6 1%, #4867D6 100%);
+}
+
+button.green {
+    background-color: #00CC00;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.01, #269926), color-stop(1.00, #00CC00));
+    background-image: -moz-linear-gradient(center bottom, #269926 1%, #00CC00 100%);
+}
+
+
+
+/* Breadcrumbs
+--------------------------------------------------------*/
+div#breadcrumb { margin-bottom: 15px; color: #888; }
+
+/* Pagination
+--------------------------------------------------------*/
+
+div.pagination { text-align: center; margin: 10px 0 5px; }
+div.pagination span.pagination_meta { display: block; margin-bottom: 8px; }
+div.pagination span.page { margin: 0px 2px; }
+
+/* Game Board
+--------------------------------------------------------*/
+
+div.board { border: #000000 solid 2px; display: inline-block; }
+div.board div.row {}
+div.board div.row div.cell { display: inline-block; float: left; }
+
+div.board div.row.last div.cell { border-bottom: none; }
+div.board div.row div.cell.last { border-right: none; }
+div.board div.row div.cell { border-right: #AAA solid 1px; border-bottom: #AAA solid 1px; }
+
+div.board div.row div.cell.tiny { width: 5px; height: 5px; }
+div.board div.row div.cell.small { width: 10px; height: 10px; }
+div.board div.row div.cell.medium { width: 20px; height: 20px; }
+div.board div.row div.cell.large { width: 40px; height: 40px; }
+
+div.board div.row div.cell.alive { background-color: #CCCCCC; }
